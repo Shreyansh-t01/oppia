@@ -134,10 +134,16 @@
 }
 
 .splash-page .oppia-splash-testimonial-arrow {
+  appearance: none;
+  background: transparent;
+  border: 0;
   color: #6d6d6d;
+  cursor: pointer;
   font-size: 3.0em;
   margin-right: 20px;
   margin-top: 50px;
+  padding: 0;
+
 }
 
 .splash-page .splash-arrows-container {
