@@ -374,6 +374,11 @@ export class StateGraphVisualization implements OnInit, OnDestroy {
     }
   }
 
+  onNodeDeletionKeydown(event: KeyboardEvent, nodeId: string): void {
+    event.preventDefault();
+    this.onNodeDeletionClick(nodeId);
+  }
+
   getHighlightTransform(x0: number, y0: number): string {
     return 'rotate(-10,' + (x0 - 10) + ',' + (y0 - 5) + ')';
   }

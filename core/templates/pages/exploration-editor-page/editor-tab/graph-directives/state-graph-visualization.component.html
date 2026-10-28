@@ -69,7 +69,8 @@ with the same id on the page. -->
                       class="clickable oppia-node-delete"
                       (click)="onNodeDeletionClick(node.id)">
                 </rect>
-                <text [attr.aria-label]="'Delete ' + getNodeTitle(node) + ' card'" (keydown.enter)="onNodeDeletionClick(node.id)"
+                <text [attr.aria-label]="'Delete ' + getNodeTitle(node) + ' card'"
+                      (keydown.enter)="onNodeDeletionKeydown($event, node.id)"
                       tabindex="0" [attr.dx]="node.x0 + node.width" [attr.dy]="node.y0" text-anchor="right">
                   x
                 </text>
